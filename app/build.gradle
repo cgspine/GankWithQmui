@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -33,4 +34,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    def qmui_version = '2.0.0-alpha02'
+    implementation "com.qmuiteam:qmui:$qmui_version"
+    implementation "com.qmuiteam:arch:$qmui_version"
+    kapt "com.qmuiteam:arch-compiler:$qmui_version" // use annotationProcessor if java
 }
