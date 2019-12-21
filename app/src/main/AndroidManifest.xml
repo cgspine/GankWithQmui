@@ -22,13 +22,16 @@
         android:name="notch.config"
         android:value="portrait|landscape"/>
 
-<activity
-    android:name=".LauncherActivity"
-    android:theme="@style/AppTheme.Launcher">
-    <intent-filter>
-        <category android:name="android.intent.category.LAUNCHER"/>
-        <action android:name="android.intent.action.MAIN"/>
-    </intent-filter>
-</activity>
+    <activity
+        android:name=".LauncherActivity"
+        android:theme="@style/AppTheme.Launcher">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER"/>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".CommonHolderActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"/>
 </application>
 </manifest>
