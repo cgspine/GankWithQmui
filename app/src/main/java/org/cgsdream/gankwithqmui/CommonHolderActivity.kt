@@ -1,15 +1,10 @@
 package org.cgsdream.gankwithqmui
 
-import android.view.View
 import com.qmuiteam.qmui.arch.QMUIFragmentActivity
 import com.qmuiteam.qmui.arch.annotation.DefaultFirstFragment
-import com.qmuiteam.qmui.arch.annotation.FirstFragments
+import com.qmuiteam.qmui.arch.annotation.LatestVisitRecord
 
-@FirstFragments(
-    value = [
-        HomeFragment::class
-    ]
-)
+@LatestVisitRecord
 @DefaultFirstFragment(HomeFragment::class)
 class CommonHolderActivity : QMUIFragmentActivity() {
 

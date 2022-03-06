@@ -24,7 +24,8 @@
 
     <activity
         android:name=".LauncherActivity"
-        android:theme="@style/AppTheme.Launcher">
+        android:theme="@style/AppTheme.Launcher"
+        android:exported="true">
         <intent-filter>
             <category android:name="android.intent.category.LAUNCHER"/>
             <action android:name="android.intent.action.MAIN"/>
@@ -32,6 +33,7 @@
     </activity>
 
     <activity android:name=".CommonHolderActivity"
-        android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"/>
+        android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+        android:exported="false"/>
 </application>
 </manifest>
