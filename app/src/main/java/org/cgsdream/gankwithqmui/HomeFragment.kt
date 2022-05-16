@@ -39,6 +39,11 @@ class HomeFragment : QMUIFragment() {
                 ) {
                     startFragment(RecyclerViewIssueFragment())
                 }
+                .addItemView(
+                    groupListView.createItemView("Android Issue Demo 1")
+                ) {
+                    startFragment(AndroidIssue1Fragment())
+                }
                 .addTo(groupListView)
             addView(groupListView, ConstraintLayout.LayoutParams(0, 0).apply {
                 alignParentHor()
